@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Мой сайт</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap" rel="stylesheet">
+</head>
+<body link="white" vlink="white" alink="white" bgcolor="#1d1d1d">
+  
+<header>
+<!--Шапка-->
+  <div class="main">
+    <a name="forme"></a>
+    <div class="header">     
+      <div class="header-top">
+        <span  class="me"><a href="#forme"><p>Обо мне</p> </a></span>
+        <span  class="portf"><a href="#port"><p>Портфолио</p> </a></span>
+        <span  class="serv"><a href="#ser"><p>Услуги</p> </a></span>
+        <span  class="softs"><a href="#soft"><p>Софт</p> </a></span>
+        <span  class="contact"><a href="#contact"><p>Контакты</p> </a></span>
+        <span  class="logo"><img src="images/Logo2.png" width="150"></span>
+      </div>
+        <div class="foto"></div>
+      <div class="forme">
+        <span  class="forme2"><p>Меня зовут Никита и я <b> веб-дизайнер</b></p> </span>
+        <span  class="forme3"><p>Закажи мой дизайн Заполни анкету</p> </span>
+        <span  class="forme4"><p>Хорошо знаю HTML и CSS, умею работать в Wordpress, так же работаю в Figma, GIMP и Photoshop</p> </span>
+        <div class="maket">         
+          <span  class="maket2"><p><a href="#contact"> Заказать макет</a></p> </span>
+        </div>
+        
+      </div>
+   
+   </div>
+</header>
+
+<main>
+  <!--Блок Портфолио-->
+   
+    <div class=portfo>
+      <a name="port"></a>
+      <div class="foto-portf">
+        <div class="foto-portf1"></div>
+        <div class="foto-portf2"></div>
+      </div>
+      <span  class="text-portf">ПОРТФОЛИО</span>
+      <span  class="opis">Примеры работы</span>
+    </div>
+    <a name="serv"></a>
+    <div class="servi">
+<!--Блок услуги-->
+      <span  class="servis">Услуги</span>
+      <a name="ser"></a>
+      <div class="box1">
+        <span  class="box11">Верстка сайта</span>
+        <span  class="box111">Создание сайта на HTML и CSS, без макета.</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open1"><p>О услуге</p></button>
+
+          <dialog id="myDialog1">
+            <div>
+              <p>Верстка сайта - это процесс создания фронтенда (внешнего вида) сайта на основе макетов, где верстальщик переносит графические элементы в HTML, CSS и JavaScript код. В результате создается функциональный сайт, соответствующий дизайну.</p>
+              <button class="button-close1" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen1 = document.querySelector(".button-open1");
+const buttonClose1 = document.querySelector(".button-close1");
+const myDialog1 = document.querySelector("#myDialog1");
+
+// обработчик события для кнопки открытия
+buttonOpen1.addEventListener("click", function () {
+  myDialog1.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose1.addEventListener("click", function () {
+  myDialog1.close();
+});
+          </script></span>
+      </div>
+      <div class="box2">
+        <span  class="box22">Макет сайта в Figma</span>
+        <span  class="box222">Разработка структуры и дизайна в Figma. Без верстки.</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open2"><p>О услуге</p></button>
+
+          <dialog id="myDialog2">
+            <div>
+              <p>Услуга Макет сайта в Figma включает в себя создание дизайн-макета сайта в программе Figma. Дизайнер использует этот инструмент для разработки визуальной концепции, создания качественного макета сайта с учетом требований заказчика. В итоге заказчик получает готовую визуальную концепцию сайта, которая может быть использована для дальнейшей разработки и создания сайта.</p>
+              <button class="button-close2" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen2 = document.querySelector(".button-open2");
+const buttonClose2 = document.querySelector(".button-close2");
+const myDialog2 = document.querySelector("#myDialog2");
+
+// обработчик события для кнопки открытия
+buttonOpen2.addEventListener("click", function () {
+  myDialog2.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose2.addEventListener("click", function () {
+  myDialog2.close();
+});
+          </script></span>
+      </div>
+      <div class="box3">
+        <span  class="box33">Редизайн</span>
+        <span  class="box333">Сайт есть, но он устарел? Тогда выбирай эту услугу!</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open3"><p>О услуге</p></button>
+
+          <dialog id="myDialog3">
+            <div>
+              <p>Услуга "Редизайн" - это процесс изменения внешнего вида и функциональности уже существующего веб-сайта с целью улучшения его использования и пользовательского опыта. Дизайнер переосмысливает интерфейс сайта, вносит изменения в цветовую гамму, типографику, структуру страниц и множество других элементов, в результате чего сайт становится более удобным для пользователей и привлекательным для потенциальных клиентов.</p>
+              <button class="button-close3" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen3 = document.querySelector(".button-open3");
+const buttonClose3 = document.querySelector(".button-close3");
+const myDialog3 = document.querySelector("#myDialog3");
+
+// обработчик события для кнопки открытия
+buttonOpen3.addEventListener("click", function () {
+  myDialog3.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose3.addEventListener("click", function () {
+  myDialog3.close();
+});
+          </script></span>
+      </div>
+      <div class="box4">
+        <span  class="box44">Сайт на Wordpress</span>
+        <span  class="box444">Создание макета в Figma, разработка его в Wordpress</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open4"><p>О услуге</p></button>
+
+          <dialog id="myDialog4">
+            <div>
+              <p>Услуга "Сайт на WordPress" заключается в создании веб-сайта на базе популярной CMS - WordPress. Дизайнер создает уникальный дизайн сайта и использование готовых шаблонов, выполняет установку и настройку WordPress, плагинов и тем, создает необходимые страницы для сайта и добавляет контент. В результате заказчик получает функциональный и удобный в управлении веб-сайт на основе WordPress.</p>
+              <button class="button-close4" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen4 = document.querySelector(".button-open4");
+const buttonClose4 = document.querySelector(".button-close4");
+const myDialog4 = document.querySelector("#myDialog4");
+
+// обработчик события для кнопки открытия
+buttonOpen4.addEventListener("click", function () {
+  myDialog4.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose4.addEventListener("click", function () {
+  myDialog4.close();
+});
+          </script></span>
+      </div>
+      <div class="box5">
+        <span  class="box55">Доработка</span>
+        <span  class="box555">Есть сайт, но остались мелочи? Доделаю!</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open5"><p>О услуге</p></button>
+
+          <dialog id="myDialog5">
+            <div>
+              <p>Услуга Доработка включает в себя внесение изменений в уже существующий веб-сайт. Дизайнер работает по техническому заданию заказчика, анализирует существующий сайт, определяет проблемы и на основе этого внедряет необходимые изменения. Это может быть любое изменение в визуальном дизайне сайта, изменение функциональности, добавление новых возможностей или элементов интерфейса. В результате сайт становится более совершенным и соответствует требованиям заказчика</p>
+              <button class="button-close5" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen5 = document.querySelector(".button-open5");
+const buttonClose5 = document.querySelector(".button-close5");
+const myDialog5 = document.querySelector("#myDialog5");
+
+// обработчик события для кнопки открытия
+buttonOpen5.addEventListener("click", function () {
+  myDialog5.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose5.addEventListener("click", function () {
+  myDialog5.close();
+});
+          </script></span>
+      </div>
+      <div class="box6">
+        <span  class="box66">Создание сайта</span>
+        <span  class="box666">Создание макета в Figma, сам сайт делается в HTML и CSS. Также возможно на Wordpress или Tilda</span>
+        <div class="ab_ser11"></div>
+        <span  class="ab_ser1"> <button class="button-open6"><p>О услуге</p></button>
+
+          <dialog id="myDialog6">
+            <div>
+              <p>Создание сайта - это услуга, которая позволяет создать профессиональный и функциональный сайт для вашего бизнеса или персонального использования. Веб-дизайнеры и разработчики работают над созданием сайта, начиная с концепции и дизайна, и заканчивая разработкой, тестированием и запуском веб-сайта на хостинге. Создание сайта может включать в себя такие этапы, как настройка домена, разработка макета страниц, программирование функционала, интеграция социальных сетей и почты, тестирование сайта на разных устройствах и многое другое. В итоге вы получаете готовый сайт, который отражает вашу компанию или личное представление в Интернете, увеличивает вашу онлайн-присутствие и способствует наращиванию вашей клиентской базы.</p>
+              <button class="button-close6" data-action="close">Закрыть окно</button>
+            </div>
+          </dialog>
+          <script>
+            // получаем кнопки и диалоговое окно
+const buttonOpen6 = document.querySelector(".button-open6");
+const buttonClose6 = document.querySelector(".button-close6");
+const myDialog6 = document.querySelector("#myDialog6");
+
+// обработчик события для кнопки открытия
+buttonOpen6.addEventListener("click", function () {
+  myDialog6.showModal();
+});
+
+// обработчик события для кнопки закрытия
+buttonClose6.addEventListener("click", function () {
+  myDialog6.close();
+});
+          </script></span>
+      </div>
+    </div>
+    
+<!--Блок софта-->
+  
+    <div class="soft">
+      <a name="soft"></a>
+      <div class="text-soft"><p>Чем владею</p></div>
+      <div class="photo-soft">
+      <div class="html"><img src="images/html-5-svgrepo-com.svg" alt="" width="150"></div>
+      <div class="css"><img src="images/css-3-svgrepo-com.svg" alt="" width="150"></div>
+      <div class="fig"><img src="images/figma-svgrepo-com.svg" alt="" width="150"></div>
+      <div class="wp"><img src="images/wordpress-color-svgrepo-com.svg" alt="" width="150"></div>
+      <div class="ps"><img src="images/photoshop-svgrepo-com.svg" alt="" width="150"></div>
+    </div></div>
+  </main>
+
+  <footer>
+<!--Подвал-->
+    <div class="footer">
+      <a name="contact"></a>
+      <span  class="social">Социальные сети</span>
+      <div class="vk">
+        <a href="https://vk.com/nnikk666"><img src="images/icons8-vk-в-круге.svg" alt="" width="96" height="96" ></a>
+      </div>
+      <div class="tg">
+        <a href="http://t.me/NNIKK666"><img src="images/icons8-телеграмма-app.svg" alt="" width="96" height="96"></a>
+      </div>
+      <div class="mail">
+        <a href="mailto:1456599_ru@mail.ru"><img src="images/icons8-конверт-в-круге-96.png" alt="" width="96" height="96"></a>
+      </div>
+      <span  class="qwest">Есть вопросы?</span>
+      <div class="box-mail">
+        <span  class="mail-text">Email: 1456599_ru@mail.ru </span></div>
+      <div class="box-tele">
+        <span  class="tele-text">Телефон: +7 909 922 11 44 </span></div>
+
+<!--Под-Подвал-->
+      <div class="footer-end">
+        <div class="frame-footer">
+
+          <span  class="text-footer"><p>&copy; дизайн.ру 1999 - 2023 г.</p> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

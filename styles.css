@@ -1,0 +1,679 @@
+body {
+	display: inline-block;
+}
+.main { 
+	background-color:rgba(28, 28, 28, 1);
+	height:3577px;
+	position:absolute;
+	display: flex;
+}
+.header { 
+
+	height:700px;
+	position:absolute;
+	display: flex;
+}
+.header-top { 
+	background-color:rgba(255, 255, 255, 0);
+
+	height:90px;
+	position:absolute;
+}
+.me, 
+.portf, 
+.serv,
+.softs,
+.contact { 
+	color:rgba(251, 188, 91, 1);
+	width:100px;
+	height:29px;
+	position:absolute;
+	top:45px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+.me {
+	left:650px;
+}
+.portf { 
+	left:790px;
+}
+.serv { 
+	left:970px;
+}
+.softs { 
+	left:1100px;
+}
+.contact { 
+	left:1200px;
+}
+.logo { 
+	color:rgba(255, 255, 255, 1);
+	width:138px;
+	height:48px;
+	position:absolute;
+	left:100px;
+	top:10px;
+	font-family:Inter;
+	text-align:right;
+	font-size:48px;
+	letter-spacing: 10px;
+}
+.foto { 
+	width:500px;
+	height:500px;
+	position:absolute;
+	border-radius:30px;
+	left:273px;
+	top:142px;
+	background-image:url(images/Me.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.forme{ 
+	width:851px;
+	height:514px;
+	position:absolute;
+	left:960px;
+	top:186px;
+}
+.forme2 { 
+	color:rgba(255, 255, 255, 1);
+	width:554px;
+	height:96px;
+	position:absolute;
+	left:65px;
+	top:21px;
+	font-family:Inter;
+	text-align:right;
+	font-size:48px;
+	line-height: 70px;
+}
+.forme3 { 
+	color:rgba(255, 255, 255, 1);
+	width:239px;
+	height:96px;
+	position:absolute;
+	left:70px;
+	top:335px;
+	font-family:Inter;
+	text-align:right;
+	font-size:24px;
+}
+.maket { 
+	box-shadow:0px 5px 5px rgba(0, 0, 0, 0.25);
+	background-color:rgba(251, 188, 91, 1);
+	width:250px;
+	height:90px;
+	position:absolute;
+	left:416px;
+	top:345px;
+	border-radius:50px;
+}
+.maket2 { 
+	color:rgba(255, 255, 255, 1);
+	width:190px;
+	height:48px;
+	position:absolute;
+	left:25px;
+	top:5px;
+	font-family:Inter;
+	text-align:right;
+	font-size:24px;
+}
+
+.forme4 { 
+	color:rgba(255, 255, 255, 1);
+	width:788px;
+	height:66px;
+	position:absolute;
+	left:2px;
+	top:190px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+
+.portfo { 
+
+	height:1096px;
+	position:absolute;
+	left:0px;
+	top:700px;
+
+}
+
+.foto-portf { 
+	width:1359px;
+	height:727px;
+	position:absolute;
+	left:260px;
+	top:295px;
+}
+.foto-portf1 { 
+	width:442px;
+	height:727px;
+	position:absolute;
+	left:917px;
+	top:0px;
+	background-image:url(images/port1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.foto-portf2 { 
+	width:551px;
+	height:727px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/port2.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.text-portf { 
+	color:rgba(255, 255, 255, 1);
+	width:431px;
+	height:48px;
+	position:absolute;
+	left:746px;
+	top:90px;
+	font-family:Inter;
+	text-align:left;
+	font-size:64px;
+}
+.opis { 
+	color:rgba(255, 255, 255, 1);
+	width:768px;
+	height:48px;
+	position:absolute;
+	left:578px;
+	top:174px;
+	font-family:Inter;
+	text-align: center;
+	font-size:48px;
+
+}
+
+
+/* стили для диалогового окна */
+dialog {
+  top: 300px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 9px;
+  border-width: thin;
+  
+}
+
+/* стили для кнопки, открывающей окно */
+.button-open1 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close1 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }/* стили для кнопки, открывающей окно */
+.button-open2 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close2 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }/* стили для кнопки, открывающей окно */
+.button-open3 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close3 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }/* стили для кнопки, открывающей окно */
+.button-open4 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close4 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }/* стили для кнопки, открывающей окно */
+.button-open5 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close5 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }/* стили для кнопки, открывающей окно */
+.button-open6 {
+	background-color: rgba(245, 235, 224, 1);
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 138px;
+	height:47px;	
+  }
+  
+  /* стили для кнопки закрытия окна */
+  .button-close6 {
+	background-color: #ccc;
+	color: #000;
+	padding: 6px 12px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+
+
+
+
+
+
+.servi { 
+
+	height:734px;
+	position:absolute;
+	left:0px;
+	top:1796px;
+
+}
+.servis { 
+	color:rgba(255, 255, 255, 1);
+	width:218px;
+	height:77px;
+	position:absolute;
+	left:851px;
+	top:0px;
+	font-family:Inter;
+	text-align:left;
+	font-size:64px;
+}
+
+.ab_ser1 { 
+	color:rgba(255, 255, 255, 1);
+	width:103px;
+	height:29px;
+	position:absolute;
+	left:298px;
+	top:193px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+
+}
+.box1 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:216px;
+	top:114px;
+	border-radius:10px;
+}
+
+.box11 { 
+	color:rgba(255, 255, 255, 1);
+	width:300px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box111 { 
+	color:rgba(255, 255, 255, 1);
+	width:379px;
+	height:58px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+
+.box2 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:216px;
+	top:414px;
+	border-radius:10px;
+}
+.box22 { 
+	color:rgba(255, 255, 255, 1);
+	width:404px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box222 { 
+	color:rgba(255, 255, 255, 1);
+	width:399px;
+	height:58px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+
+.box3 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:725px;
+	top:114px;
+	border-radius:10px;
+}
+.box33 { 
+	color:rgba(255, 255, 255, 1);
+	width:187px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box333 { 
+	color:rgba(255, 255, 255, 1);
+	width:312px;
+	height:58px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+
+
+.box4 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:725px;
+	top:414px;
+	border-radius:10px;
+}
+.box44 { 
+	color:rgba(255, 255, 255, 1);
+	width:367px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box444 { 
+	color:rgba(255, 255, 255, 1);
+	width:329px;
+	height:58px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+.box5 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:1234px;
+	top:114px;
+	border-radius:10px;
+}
+.box55 { 
+	color:rgba(255, 255, 255, 1);
+	width:213px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box555 { 
+	color:rgba(255, 255, 255, 1);
+	width:376px;
+	height:58px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+.box6 { 
+	background-color:rgba(251, 188, 91, 1);
+	width:470px;
+	height:257px;
+	position:absolute;
+	left:1234px;
+	top:414px;
+	border-radius:10px;
+}
+.box66 { 
+	color:rgba(255, 255, 255, 1);
+	width:312px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:12px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+}
+.box666 { 
+	color:rgba(255, 255, 255, 1);
+	width:419px;
+	height:116px;
+	position:absolute;
+	left:16px;
+	top:85px;
+	font-family:Inter;
+	text-align:left;
+	font-size:24px;
+}
+.soft {
+
+	height:400px;
+	position:absolute;
+	top:2500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	
+}
+.text-soft {
+	margin-top: 100px;
+	font-size: 49px;
+	color: white;
+	font-family: Inter;
+	text-align: center;
+}
+.photo-soft {
+	display: flex;
+	flex-wrap: wrap;
+    gap: 100px;
+}
+
+.footer { 
+
+	height:617px;
+	position:absolute;
+	top:2960px;
+}
+.vk { 
+	position:absolute;
+	left:287px;
+	top:231px;
+}
+
+.tg { 
+	position:absolute;
+	left:496px;
+	top:226px;
+}
+.mail { 
+	position:absolute;
+	left:705px;
+	top:231px;
+}
+.qwest { 
+	width: 500px;
+	color:white;
+	position:absolute;
+	left:1332px;
+	top:119px;
+	font-family:Montserrat;
+	font-size:36px;
+}
+.box-mail { 
+	background-color:rgba(251, 188, 91, 1);
+	width:566px;
+	height:58px;
+	position:absolute;
+	left:1202px;
+	top:226px;
+	border-radius:30px;
+}
+.mail-text { 
+	color:white;
+	position:absolute;
+	left:32px;
+	top:7px;
+	font-family:Montserrat;
+	font-size:36px;
+}
+.box-tele { 
+	background-color:rgba(251, 188, 91, 1);
+	width:570px;
+	height:62px;
+	position:absolute;
+	left:1198px;
+	top:330px;
+	border-radius:30px;
+}
+.tele-text { 
+	color:white;
+	position:absolute;
+	left:41px;
+	top:9px;
+	font-family:Montserrat;
+	font-size:36px;
+}
+.social { 
+	width: 500px;
+	color:white;
+	position:absolute;
+	left:399px;
+	top:120px;
+	font-family:Montserrat;
+	font-size:36px;
+
+}
+.footer-end { 
+
+	height:60px;
+	position:absolute;
+	left:0px;
+	top:557px;
+}
+.frame-footer { 
+	position:absolute;
+	left:775px;
+	top:5px;
+}
+.copyright { 
+	position:absolute;
+	left:11px;
+	top:5px;
+}
+.text-footer { 
+	color:white;
+	width:350px;
+	height:30px;
+	position:absolute;
+	top:10px;
+	font-family:Montserrat;
+	font-size:24px;
+}
